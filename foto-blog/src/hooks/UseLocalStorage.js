@@ -16,7 +16,7 @@ function UseLocalStorage(key, valorInicial) {
   // Actualiza el localStorage cuando el valor cambia
   useEffect(() => {
     localStorage.setItem(key, valor);
-  }, [key, valor]);
+  }, [key]);
 
   // Función para actualizar el valor
   const actualizarValor = (nuevoValor) => {

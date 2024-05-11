@@ -18,9 +18,7 @@ const Login = () => {
         if (existe > -1) {
             dispatch(login(usuario));
             actualizarValor(usuario);
-            setTimeout(() => {
-                navigate('/posts');
-            }, 0);
+            navigate('/posts');
         } else {
             messageApi.open({
                 type: 'error',
