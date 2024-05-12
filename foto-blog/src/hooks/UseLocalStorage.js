@@ -1,15 +1,7 @@
 import { useState, useEffect } from 'react';
 
 function UseLocalStorage(key, valorInicial) {
-  // Función para obtener el valor del localStorage
-  const obtenerValorInicial = () => {
-    const valorAlmacenado = localStorage.getItem(key);
-    if (valorAlmacenado !== null) {
-      return valorAlmacenado;
-    }
-    return valorInicial;
-  };
-
+  
   // Estado para almacenar el valor actual
   const [valor, setValor] = useState(valorInicial);
 
