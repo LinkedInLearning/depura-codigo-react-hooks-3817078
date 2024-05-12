@@ -47,6 +47,7 @@ const Post = (props) => {
                 comentario: comentario
             }
         }));
+        actualizarComentario('');
     };
 
     const agregarLike = () => {
