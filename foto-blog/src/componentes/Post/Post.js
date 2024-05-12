@@ -71,7 +71,7 @@ const Post = (props) => {
                 <p><span style={profileLink}>{props.usuario.nombreUsuario}</span> {props.descripcion}</p>
                 <Collapse ghost style={{ color: 'grey' }} items={comentariosPanel(props.comentarios)} />
                 <Space.Compact style={{ width: '100%' }}>
-                    <Input placeholder="Agrega un comentario" variant="borderless" onChange={(event) => { actualizarComentario(event.target.value) }} />
+                    <Input value={comentario} placeholder="Agrega un comentario" variant="borderless" onChange={(event) => { actualizarComentario(event.target.value) }} />
                     <Button size="small" type="text" onClick={agregarComentario}>Publicar</Button>
                 </Space.Compact>
                 <Divider style={{ margin: 0 }}></Divider>

@@ -11,7 +11,7 @@ function UseLocalStorage(key, valorInicial) {
   };
 
   // Estado para almacenar el valor actual
-  const [valor, setValor] = useState(obtenerValorInicial);
+  const [valor, setValor] = useState(valorInicial);
 
   // Actualiza el localStorage cuando el valor cambia
   useEffect(() => {
